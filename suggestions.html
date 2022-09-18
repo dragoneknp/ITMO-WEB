@@ -20,12 +20,7 @@
     </head>
     <body>
         <header class="header">
-            <pre class="header__logo">
-                ╔══╗╔══╗╔═╦═╗╔═╗
-                ╚║║╝╚╗╔╝║║║║║║║║
-                ╔║║╗─║║─║║║║║║║║
-                ╚══╝─╚╝─╚╩═╩╝╚═╝
-            </pre>
+            <p id="loadTime"></p>
             <nav class="header-navbar">
                 <ul class="header-navbar-menu">
                     <li class="header-navbar-menu__item">
@@ -51,23 +46,26 @@
                     <ol class="suggest-list"></ol>
                 </section>
                 <div class="load-time-code">
-                    <code>
-                    (() => {</br>
-                        const startTime = Date.now();</br>
-                        window.addEventListener("load", () => {</br>
-                            const endTime = Date.now();</br>
-                            document.getElementById("loadTime").innerText = `${</br>
-                                endTime - startTime</br>
-                            } ms`;</br>
-                        });</br>
-                    })();</br>
-                </code>
+                    <h2 class="suggest__header">Code to count how much time passed from starting loading</h2>
+                    <div style="padding: 24px 0 24px 24px; background: rgb(39, 73, 112); margin: 0 0 64px 0;">
+                        <code style="color: #fff">
+                            (() => {</br>
+                                const startTime = Date.now();</br>
+                                window.addEventListener("load", () => {</br>
+                                    const endTime = Date.now();</br>
+                                    document.getElementById("loadTime").innerText = `${</br>
+                                        endTime - startTime</br>
+                                    } ms`;</br>
+                                });</br>
+                            })();</br>
+                        </code>
+                    </div>
+                    
                 </div>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
-                <p id="loadTime"></p>
                 <ul class="footer-list">
                     <li class="footer-list__item footer-list-item">
                         <h3 class="footer-list-item__header">Great Quote</h3>

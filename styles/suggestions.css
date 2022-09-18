@@ -2,6 +2,11 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    margin: 0 0 24px 0;
+}
+
+.suggest-form {
+    margin: 0 0 24px 0;
 }
 
 .suggest__input {
