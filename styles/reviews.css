@@ -1,3 +1,27 @@
 .reviews {
     padding: 0 0 64px 0;
 }
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reviews-list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 24px;
+    border: 1px solid #000;
+}
+
+.error {
+    text-align: center;
+    font-size: 48px;
+    color: red;
+    line-height: 64px;
+    padding: 0 0 64px 0;
+    display: none;
+}

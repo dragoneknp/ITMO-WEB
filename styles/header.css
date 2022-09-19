@@ -26,15 +26,22 @@
 .header-navbar-menu__item a {
     color: #000;
     font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.header-navbar-menu__item a:hover {
+    color: rgb(69, 68, 68);
+    transition: 0.3s ease;
 }
 
 #loadTime {
     position: absolute;
     right: 64px;
+    width: fit-content;
 }
 
 @media screen and (max-width: 600px) {
     #loadTime {
-        left: 0;
+        display: none;
     }
 }
