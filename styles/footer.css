@@ -1,0 +1,14 @@
+.footer {
+    background: #fafafa;
+}
+
+.footer-list-item__header {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.footer-list-item-list__item {
+    font-size: 14px;
+    line-height: 20px;
+}

@@ -1,0 +1,39 @@
+.suggest__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.suggest__input {
+    outline: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #f5f5f5;
+    transition: 0.3s ease;
+}
+
+.suggest__input:focus {
+    transition: 0.3s ease;
+    border: 1px solid #2a9d8f;
+}
+
+.suggest__sendButton {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: #fff;
+    background: #0fb623;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.suggest__sendButton:hover {
+    transition: 0.3s ease;
+    background: #0b8018;
+}
+
+.suggest__sendButton:active {
+    transition: 0.3s ease;
+    background: #065e10;
+}

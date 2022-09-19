@@ -12,6 +12,11 @@
         />
         <script src="./scripts/getLoadTime.js"></script>
         <title>Главная</title>
+        <link rel="stylesheet" href="./styles/clear.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
     </head>
     <body>
         <header class="header">
@@ -23,7 +28,9 @@
             </pre>
             <nav class="header-navbar">
                 <ul class="header-navbar-menu">
-                    <li class="header-navbar-menu__item">
+                    <li
+                        class="header-navbar-menu__item header-navbar-menu__item_selected"
+                    >
                         <a href="index.html">Main</a>
                     </li>
                     <li class="header-navbar-menu__item">
@@ -36,162 +43,272 @@
             </nav>
         </header>
         <main>
-            <section class="about">
-                <div class="about-text">
-                    <h2 class="about-text__header">About Me</h2>
-                    <p class="about-text__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum et malesuada odio. In arcu diam, pretium nec
-                        mi et, fermentum faucibus felis. Vivamus in volutpat
-                        dui. Aenean mattis mi scelerisque, posuere arcu vel,
-                        placerat risus. Mauris in metus tempus, porta ante sed,
-                        tempus mauris. Phasellus in aliquet augue. Vivamus ac
-                        massa pharetra, dapibus mi nec, dignissim ligula. Proin
-                        convallis odio eu nisl consectetur, nec posuere nunc
-                        maximus. In efficitur arcu non vulputate malesuada.
-                        Praesent neque orci, ultricies eget velit vel, facilisis
-                        aliquam enim.
-                    </p>
-                </div>
-                <img
-                    src="./assets/cat.svg"
-                    alt="Cute cat"
-                    class="about__image"
-                />
-            </section>
-            <div class="divider-line"></div>
-            <section class="skills">
-                <h2 class="skills__header">My skills</h2>
-                <ul class="skills-list">
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                    <li class="skills-list__item skills-list-item">
-                        <img
-                            class="skills-list-item__image"
-                            src="./assets/react.svg"
-                            alt="react icon"
-                        />
-                        <p class="skills-list-item__label">React</p>
-                    </li>
-                </ul>
-            </section>
-            <div class="divider-line"></div>
-            <section class="portfolio">
-                <h2 class="portfolio__header">My Portfolio</h2>
-                <div class="portfolio-slider">
+            <div class="container">
+                <section class="about">
+                    <div class="about-text">
+                        <h2 class="about-text__header section-header">
+                            About Me
+                        </h2>
+                        <p class="about-text__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vestibulum et malesuada odio. In arcu diam,
+                            pretium nec mi et, fermentum faucibus felis. Vivamus
+                            in volutpat dui. Aenean mattis mi scelerisque,
+                            posuere arcu vel, placerat risus. Mauris in metus
+                            tempus, porta ante sed, tempus mauris. Phasellus in
+                            aliquet augue. Vivamus ac massa pharetra, dapibus mi
+                            nec, dignissim ligula. Proin convallis odio eu nisl
+                            consectetur, nec posuere nunc maximus. In efficitur
+                            arcu non vulputate malesuada. Praesent neque orci,
+                            ultricies eget velit vel, facilisis aliquam enim.
+                        </p>
+                    </div>
+                    <img
+                        src="./assets/cat.svg"
+                        alt="Cute cat"
+                        class="about__image"
+                    />
+                </section>
+                <div class="divider-line"></div>
+                <section class="skills">
+                    <h2 class="skills__header section-header">My skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                        <li class="skills-list__item skills-list-item">
+                            <img
+                                class="skills-list-item__image"
+                                src="./assets/react.svg"
+                                alt="react icon"
+                            />
+                            <p class="skills-list-item__label">React</p>
+                        </li>
+                    </ul>
+                </section>
+                <div class="divider-line"></div>
+                <section class="portfolio">
+                    <h2 class="portfolio__header section-header">
+                        My Portfolio
+                    </h2>
+                    <div class="portfolio-slider">
+                        <div
+                            class="portolio-slider__arrow_left portfolio-slider__arrow"
+                        >
+                            <img
+                                src="./assets/arrow-left.svg"
+                                alt="arrow left"
+                            />
+                        </div>
+                        <div
+                            class="portfolio-slider__item portfolio-slider-item"
+                        >
+                            <h3 class="portfolio-slider-item__label">
+                                Cat Galery
+                            </h3>
+                            <img
+                                class="portfolio-slider-item__img"
+                                src="./assets/cat-galery.png"
+                                alt="cat galery"
+                            />
+                        </div>
+                        <div
+                            class="portfolio-slider__item portfolio-slider-item"
+                        >
+                            <h3 class="portfolio-slider-item__label">
+                                Gif Chat
+                            </h3>
+                            <img
+                                class="portfolio-slider-item__img"
+                                src="./assets/gif-chat.png"
+                                alt="gif chat"
+                            />
+                        </div>
+                        <div
+                            class="portolio-slider__arrow_right portfolio-slider__arrow"
+                        >
+                            <img
+                                src="./assets/arrow-right.svg"
+                                alt="arrow right"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section class="favourite-cats">
                     <div
-                        class="portolio-slider__arrow_left portfolio-slider__arrow"
+                        class="favourite-cats__header favourite-cats-header-table"
                     >
-                        <img src="./assets/arrow-left.svg" alt="arrow left" />
+                        <p
+                            class="favourite-cats-header-table__name favourite-cats-header-table__col"
+                        >
+                            Название
+                        </p>
+                        <p class="favourite-cats-header-table__col">Вес</p>
+                        <p class="favourite-cats-header-table__col">
+                            Время жизни
+                        </p>
+                        <p class="favourite-cats-header-table__col">Цена</p>
+                        <p class="favourite-cats-header-table__col">Ссылка</p>
                     </div>
-                    <div class="portfolio-slider__item portfolio-slider-item">
-                        <h3 class="portfolio-slider-item__label">Cat Galery</h3>
-                        <img
-                            class="portfolio-slider-item__img"
-                            src="./assets/cat-galery.png"
-                            alt="cat galery"
-                        />
-                    </div>
-                    <div class="portfolio-slider__item portfolio-slider-item">
-                        <h3 class="portfolio-slider-item__label">Gif Chat</h3>
-                        <img
-                            class="portfolio-slider-item__img"
-                            src="./assets/gif-chat.png"
-                            alt="gif chat"
-                        />
-                    </div>
-                    <div
-                        class="portolio-slider__arrow_right portfolio-slider__arrow"
-                    >
-                        <img src="./assets/arrow-left.svg" alt="arrow right" />
-                    </div>
-                </div>
-            </section>
+                    <ul class="favourite-cats-table">
+                        <li
+                            class="favourite-cats-table__row favourite-cats-table-row"
+                        >
+                            <p class="favourite-cats-table-row__col">
+                                Персидская Кошка
+                            </p>
+                        </li>
+                        <li class="favourite-cats-table__row">4-6 кг</li>
+                        <li class="favourite-cats-table__row">12-17 лет</li>
+                        <li class="favourite-cats-table__row">40 000 рублей</li>
+                        <li class="favourite-cats-table__row">
+                            <a
+                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                >Ссылка</a
+                            >
+                        </li>
+                        <li
+                            class="favourite-cats-table__row favourite-cats-table-row"
+                        >
+                            <p class="favourite-cats-table-row__col">
+                                Персидская Кошка
+                            </p>
+                        </li>
+                        <li class="favourite-cats-table__row">4-6 кг</li>
+                        <li class="favourite-cats-table__row">12-17 лет</li>
+                        <li class="favourite-cats-table__row">40 000 рублей</li>
+                        <li class="favourite-cats-table__row">
+                            <a
+                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                >Ссылка</a
+                            >
+                        </li>
+                        <li
+                            class="favourite-cats-table__row favourite-cats-table-row"
+                        >
+                            <p class="favourite-cats-table-row__col">
+                                Персидская Кошка
+                            </p>
+                        </li>
+                        <li class="favourite-cats-table__row">4-6 кг</li>
+                        <li class="favourite-cats-table__row">12-17 лет</li>
+                        <li class="favourite-cats-table__row">40 000 рублей</li>
+                        <li class="favourite-cats-table__row">
+                            <a
+                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                >Ссылка</a
+                            >
+                        </li>
+                        <li
+                            class="favourite-cats-table__row favourite-cats-table-row"
+                        >
+                            <p class="favourite-cats-table-row__col">
+                                Персидская Кошка
+                            </p>
+                        </li>
+                        <li class="favourite-cats-table__row">4-6 кг</li>
+                        <li class="favourite-cats-table__row">12-17 лет</li>
+                        <li class="favourite-cats-table__row">40 000 рублей</li>
+                        <li class="favourite-cats-table__row">
+                            <a
+                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                >Ссылка</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
         <footer class="footer">
-            <p id="loadTime"></p>
-            <ul class="footer-list">
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">Great Quote</h3>
-                    <p class="footer-list-item__quote">
-                        <q>
-                            В счастливом краю элегантного кода и красивых радуг
-                            живет гадское чудище по имени Неэффективность</q
-                        >
-                        - Javascript
-                    </p>
-                </li>
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">My socials</h3>
-                    <ol class="footer-list-item-list">
-                        <li class="footer-list-item-list__item">Github</li>
-                        <li class="footer-list-item-list__item">Telegram</li>
-                        <li class="footer-list-item-list__item">VK</li>
-                    </ol>
-                </li>
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">Interesting Quotes</h3>
-                    <ol class="footer-list-item-list">
-                        <li class="footer-list-item-list__item">First</li>
-                        <li class="footer-list-item-list__item">Second</li>
-                        <li class="footer-list-item-list__item">Third</li>
-                    </ol>
-                </li>
-            </ul>
+            <div class="container">
+                <p id="loadTime"></p>
+                <ul class="footer-list">
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">Great Quote</h3>
+                        <p class="footer-list-item__quote">
+                            <q>
+                                В счастливом краю элегантного кода и красивых
+                                радуг живет гадское чудище по имени
+                                Неэффективность</q
+                            >
+                            - Javascript
+                        </p>
+                    </li>
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">My socials</h3>
+                        <ol class="footer-list-item-list">
+                            <li class="footer-list-item-list__item">Github</li>
+                            <li class="footer-list-item-list__item">
+                                Telegram
+                            </li>
+                            <li class="footer-list-item-list__item">VK</li>
+                        </ol>
+                    </li>
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">
+                            Interesting Quotes
+                        </h3>
+                        <ol class="footer-list-item-list">
+                            <li class="footer-list-item-list__item">First</li>
+                            <li class="footer-list-item-list__item">Second</li>
+                            <li class="footer-list-item-list__item">Third</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>

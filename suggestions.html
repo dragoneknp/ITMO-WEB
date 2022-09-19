@@ -12,6 +12,11 @@
         />
         <script src="./scripts/getLoadTime.js"></script>
         <title>Предложения</title>
+        <link rel="stylesheet" href="./styles/clear.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/suggestions.css" />
     </head>
     <body>
         <header class="header">
@@ -36,58 +41,67 @@
             </nav>
         </header>
         <main>
-            <section class="suggest">
-                <h2 class="suggest__header">Suggest Your Idea to help us</h2>
-                <div class="suggest-form">
-                    <input type="text" class="suggest__input" />
-                    <button class="suggest__send">Suggest</button>
+            <div class="container">
+                <section class="suggest">
+                    <h2 class="suggest__header">Suggest Your Idea to help us</h2>
+                    <div class="suggest-form">
+                        <input type="text" class="suggest__input" />
+                        <button class="suggest__sendButton">Suggest</button>
+                    </div>
+                    <ol class="suggest-list"></ol>
+                </section>
+                <div class="load-time-code">
+                    <code>
+                    (() => {</br>
+                        const startTime = Date.now();</br>
+                        window.addEventListener("load", () => {</br>
+                            const endTime = Date.now();</br>
+                            document.getElementById("loadTime").innerText = `${</br>
+                                endTime - startTime</br>
+                            } ms`;</br>
+                        });</br>
+                    })();</br>
+                </code>
                 </div>
-                <ol class="suggest-list"></ol>
-            </section>
-            <div class="load-time-code">
-                <code>
-                (() => {</br>
-                    const startTime = Date.now();</br>
-                    window.addEventListener("load", () => {</br>
-                        const endTime = Date.now();</br>
-                        document.getElementById("loadTime").innerText = `${</br>
-                            endTime - startTime</br>
-                        } ms`;</br>
-                    });</br>
-                })();</br>                  
-            </code>
             </div>
         </main>
         <footer class="footer">
-            <p id="loadTime"></p>
-            <ul class="footer-list">
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">Great Quote</h3>
-                    <p class="footer-list-item__quote">
-                        <q>
-                            В счастливом краю элегантного кода и красивых радуг
-                            живет гадское чудище по имени Неэффективность</q
-                        >
-                        - Javascript
-                    </p>
-                </li>
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">My socials</h3>
-                    <ol class="footer-list-item-list">
-                        <li class="footer-list-item-list__item">Github</li>
-                        <li class="footer-list-item-list__item">Telegram</li>
-                        <li class="footer-list-item-list__item">VK</li>
-                    </ol>
-                </li>
-                <li class="footer-list__item footer-list-item">
-                    <h3 class="footer-list-item__header">Interesting Quotes</h3>
-                    <ol class="footer-list-item-list">
-                        <li class="footer-list-item-list__item">First</li>
-                        <li class="footer-list-item-list__item">Second</li>
-                        <li class="footer-list-item-list__item">Third</li>
-                    </ol>
-                </li>
-            </ul>
+            <div class="container">
+                <p id="loadTime"></p>
+                <ul class="footer-list">
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">Great Quote</h3>
+                        <p class="footer-list-item__quote">
+                            <q>
+                                В счастливом краю элегантного кода и красивых
+                                радуг живет гадское чудище по имени
+                                Неэффективность</q
+                            >
+                            - Javascript
+                        </p>
+                    </li>
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">My socials</h3>
+                        <ol class="footer-list-item-list">
+                            <li class="footer-list-item-list__item">Github</li>
+                            <li class="footer-list-item-list__item">
+                                Telegram
+                            </li>
+                            <li class="footer-list-item-list__item">VK</li>
+                        </ol>
+                    </li>
+                    <li class="footer-list__item footer-list-item">
+                        <h3 class="footer-list-item__header">
+                            Interesting Quotes
+                        </h3>
+                        <ol class="footer-list-item-list">
+                            <li class="footer-list-item-list__item">First</li>
+                            <li class="footer-list-item-list__item">Second</li>
+                            <li class="footer-list-item-list__item">Third</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
