@@ -17,6 +17,11 @@
         <link rel="stylesheet" href="./styles/footer.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/swiper.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
     </head>
     <body>
         <header class="header">
@@ -158,45 +163,44 @@
                         My Portfolio
                     </h2>
                     <div class="portfolio-slider">
-                        <div
-                            class="portolio-slider__arrow_left portfolio-slider__arrow"
-                        >
-                            <img
-                                src="./assets/arrow-left.svg"
-                                alt="arrow left"
-                            />
-                        </div>
-                        <div
-                            class="portfolio-slider__item portfolio-slider-item portfolio-slider__item_active"
-                        >
-                            <h3 class="portfolio-slider-item__label">
-                                Cat Galery
-                            </h3>
-                            <img
-                                class="portfolio-slider-item__img"
-                                src="./assets/cat-galery.png"
-                                alt="cat galery"
-                            />
-                        </div>
-                        <div
-                            class="portfolio-slider__item portfolio-slider-item"
-                        >
-                            <h3 class="portfolio-slider-item__label">
-                                Gif Chat
-                            </h3>
-                            <img
-                                class="portfolio-slider-item__img"
-                                src="./assets/gif-chat.png"
-                                alt="gif chat"
-                            />
-                        </div>
-                        <div
-                            class="portolio-slider__arrow_right portfolio-slider__arrow"
-                        >
-                            <img
-                                src="./assets/arrow-right.svg"
-                                alt="arrow right"
-                            />
+                        <div class="swiper">
+                            <div class="swiper-controls">
+                                <div class="swiper-prevSlide swiper-control">
+                                    <img
+                                        src="./assets/arrow-left.svg"
+                                        alt="arrow left"
+                                    />
+                                </div>
+                                <div class="swiper-nextSlide swiper-control">
+                                    <img
+                                        src="./assets/arrow-right.svg"
+                                        alt="arrow right"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>Cat Galery</h3>
+                                    <img
+                                        src="./assets/cat-galery.png"
+                                        alt="cat galery"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Gif Chat</h3>
+                                    <img
+                                        src="./assets/gif-chat.png"
+                                        alt="gif chat"
+                                    />
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Cat Galery</h3>
+                                    <img
+                                        src="./assets/gif-chat.png"
+                                        alt="gif chat"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -396,5 +400,7 @@
             </div>
         </footer>
         <script src="./scripts/selectMenuItem.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="./scripts/swiper.js"></script>
     </body>
 </html>
