@@ -37,10 +37,11 @@
 #loadTime {
     position: absolute;
     right: 64px;
+    width: fit-content;
 }
 
 @media screen and (max-width: 600px) {
     #loadTime {
-        left: 0;
+        display: none;
     }
 }
