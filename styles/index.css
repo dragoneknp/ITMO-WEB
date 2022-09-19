@@ -116,7 +116,13 @@
 }
 
 .favourite-cats-table-row__item a {
+    transition: 0.3s ease;
     color: rgb(120, 199, 92);
+}
+
+.favourite-cats-table-row__item a:hover {
+    transition: 0.3s ease;
+    text-decoration: underline;
 }
 
 .favourite-cats-table__row:nth-child(even) {
@@ -146,5 +152,10 @@
     }
     .about img {
         display: none;
+    }
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 }

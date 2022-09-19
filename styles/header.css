@@ -26,6 +26,12 @@
 .header-navbar-menu__item a {
     color: #000;
     font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.header-navbar-menu__item a:hover {
+    color: rgb(69, 68, 68);
+    transition: 0.3s ease;
 }
 
 #loadTime {
