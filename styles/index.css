@@ -2,12 +2,13 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
+    margin: 0 0 24px 0;
 }
 
 .skills-list-item {
     border: 1px solid rgb(90, 214, 44);
     border-radius: 24px;
-    padding: 0 24px 0 8px;
+    padding: 8px 24px 8px 16px;
 }
 
 .skills-list-item__label {
@@ -40,4 +41,110 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.skills-list__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio__header {
+    text-align: center;
+}
+
+.portfolio-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.portfolio-slider__arrow {
+    cursor: pointer;
+}
+
+.portfolio-slider__item {
+    display: none;
+}
+
+.portfolio-slider__item_active {
+    display: block;
+}
+
+.favourite-cats-header-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 0 24px 0;
+}
+
+.favourite-cats-table__row {
+    display: grid;
+    height: 48px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.favourite-cats-table-row__item {
+    display: flex;
+    align-items: center;
+}
+
+.favourite-cats-table-row__item a {
+    color: rgb(120, 199, 92);
+}
+
+.favourite-cats-table__row:nth-child(even) {
+    background: rgba(66, 127, 175, 0.2);
+}
+
+.favourite-cats {
+    margin: 0 0 64px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .favourite-cats {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-slider-item__img {
+        max-height: 180px;
+        max-width: 240px;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .about img {
+        display: none;
+    }
 }

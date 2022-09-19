@@ -1,14 +1,46 @@
 .footer {
     background: #fafafa;
+    padding: 24px 0;
+    justify-self: flex-end;
+}
+
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-list-item__header {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+    margin: 0 0 24px 0;
+}
+
+.footer-list-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-list-item__quote {
+    max-width: 200px;
 }
 
 .footer-list-item-list__item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
     font-size: 14px;
     line-height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-list-item:nth-child(3) {
+        display: none;
+    }
 }

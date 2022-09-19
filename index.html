@@ -20,12 +20,7 @@
     </head>
     <body>
         <header class="header">
-            <pre class="header__logo">
-                ╔══╗╔══╗╔═╦═╗╔═╗
-                ╚║║╝╚╗╔╝║║║║║║║║
-                ╔║║╗─║║─║║║║║║║║
-                ╚══╝─╚╝─╚╩═╩╝╚═╝
-            </pre>
+            <p id="loadTime"></p>
             <nav class="header-navbar">
                 <ul class="header-navbar-menu">
                     <li
@@ -43,7 +38,7 @@
             </nav>
         </header>
         <main>
-            <div class="container">
+            <div class="container index-content">
                 <section class="about">
                     <div class="about-text">
                         <h2 class="about-text__header section-header">
@@ -54,13 +49,17 @@
                             elit. Vestibulum et malesuada odio. In arcu diam,
                             pretium nec mi et, fermentum faucibus felis. Vivamus
                             in volutpat dui. Aenean mattis mi scelerisque,
-                            posuere arcu vel, placerat risus. Mauris in metus
-                            tempus, porta ante sed, tempus mauris. Phasellus in
-                            aliquet augue. Vivamus ac massa pharetra, dapibus mi
-                            nec, dignissim ligula. Proin convallis odio eu nisl
-                            consectetur, nec posuere nunc maximus. In efficitur
-                            arcu non vulputate malesuada. Praesent neque orci,
-                            ultricies eget velit vel, facilisis aliquam enim.
+                            posuere arcu vel, placerat risus.
+                        </p>
+                        <br />
+                        <p class="about-text__description">
+                            Mauris in metus tempus, porta ante sed, tempus
+                            mauris. Phasellus in aliquet augue. Vivamus ac massa
+                            pharetra, dapibus mi nec, dignissim ligula. Proin
+                            convallis odio eu nisl consectetur, nec posuere nunc
+                            maximus. In efficitur arcu non vulputate malesuada.
+                            Praesent neque orci, ultricies eget velit vel,
+                            facilisis aliquam enim.
                         </p>
                     </div>
                     <img
@@ -78,64 +77,80 @@
                                 class="skills-list-item__image"
                                 src="./assets/react.svg"
                                 alt="react icon"
+                                width="40"
+                                height="40"
                             />
                             <p class="skills-list-item__label">React</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/redux.svg"
+                                alt="redux icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">Redux</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/typescript.png"
+                                alt="typescript icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">Typescript</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/vue.png"
+                                alt="vue icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">Vue</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/vue.png"
+                                alt="vuex icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">Vuex</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/scss.png"
+                                alt="scss icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">SCSS</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/html.svg"
+                                alt="html icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">HTML</p>
                         </li>
                         <li class="skills-list__item skills-list-item">
                             <img
                                 class="skills-list-item__image"
-                                src="./assets/react.svg"
-                                alt="react icon"
+                                src="./assets/webpack.png"
+                                alt="webpack icon"
+                                width="40"
+                                height="40"
                             />
-                            <p class="skills-list-item__label">React</p>
+                            <p class="skills-list-item__label">Webpack</p>
                         </li>
                     </ul>
                 </section>
@@ -154,7 +169,7 @@
                             />
                         </div>
                         <div
-                            class="portfolio-slider__item portfolio-slider-item"
+                            class="portfolio-slider__item portfolio-slider-item portfolio-slider__item_active"
                         >
                             <h3 class="portfolio-slider-item__label">
                                 Cat Galery
@@ -187,7 +202,11 @@
                         </div>
                     </div>
                 </section>
+                <div class="divider-line"></div>
                 <section class="favourite-cats">
+                    <h2 class="favourite-cats__header section-header">
+                        My favourite cats
+                    </h2>
                     <div
                         class="favourite-cats__header favourite-cats-header-table"
                     >
@@ -203,78 +222,105 @@
                         <p class="favourite-cats-header-table__col">Цена</p>
                         <p class="favourite-cats-header-table__col">Ссылка</p>
                     </div>
-                    <ul class="favourite-cats-table">
-                        <li
+                    <div class="favourite-cats-table">
+                        <ul
                             class="favourite-cats-table__row favourite-cats-table-row"
                         >
-                            <p class="favourite-cats-table-row__col">
+                            <li class="favourite-cats-table-row__item">
                                 Персидская Кошка
-                            </p>
-                        </li>
-                        <li class="favourite-cats-table__row">4-6 кг</li>
-                        <li class="favourite-cats-table__row">12-17 лет</li>
-                        <li class="favourite-cats-table__row">40 000 рублей</li>
-                        <li class="favourite-cats-table__row">
-                            <a
-                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
-                                >Ссылка</a
-                            >
-                        </li>
-                        <li
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                4-6 кг
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                12-17 лет
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                40 000 рублей
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                    target="_blank"
+                                    >Ссылка</a
+                                >
+                            </li>
+                        </ul>
+                        <ul
                             class="favourite-cats-table__row favourite-cats-table-row"
                         >
-                            <p class="favourite-cats-table-row__col">
+                            <li class="favourite-cats-table-row__item">
                                 Персидская Кошка
-                            </p>
-                        </li>
-                        <li class="favourite-cats-table__row">4-6 кг</li>
-                        <li class="favourite-cats-table__row">12-17 лет</li>
-                        <li class="favourite-cats-table__row">40 000 рублей</li>
-                        <li class="favourite-cats-table__row">
-                            <a
-                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
-                                >Ссылка</a
-                            >
-                        </li>
-                        <li
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                4-6 кг
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                12-17 лет
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                40 000 рублей
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                    target="_blank"
+                                    >Ссылка</a
+                                >
+                            </li>
+                        </ul>
+                        <ul
                             class="favourite-cats-table__row favourite-cats-table-row"
                         >
-                            <p class="favourite-cats-table-row__col">
+                            <li class="favourite-cats-table-row__item">
                                 Персидская Кошка
-                            </p>
-                        </li>
-                        <li class="favourite-cats-table__row">4-6 кг</li>
-                        <li class="favourite-cats-table__row">12-17 лет</li>
-                        <li class="favourite-cats-table__row">40 000 рублей</li>
-                        <li class="favourite-cats-table__row">
-                            <a
-                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
-                                >Ссылка</a
-                            >
-                        </li>
-                        <li
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                4-6 кг
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                12-17 лет
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                40 000 рублей
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                    target="_blank"
+                                    >Ссылка</a
+                                >
+                            </li>
+                        </ul>
+                        <ul
                             class="favourite-cats-table__row favourite-cats-table-row"
                         >
-                            <p class="favourite-cats-table-row__col">
+                            <li class="favourite-cats-table-row__item">
                                 Персидская Кошка
-                            </p>
-                        </li>
-                        <li class="favourite-cats-table__row">4-6 кг</li>
-                        <li class="favourite-cats-table__row">12-17 лет</li>
-                        <li class="favourite-cats-table__row">40 000 рублей</li>
-                        <li class="favourite-cats-table__row">
-                            <a
-                                href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
-                                >Ссылка</a
-                            >
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                4-6 кг
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                12-17 лет
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                40 000 рублей
+                            </li>
+                            <li class="favourite-cats-table-row__item">
+                                <a
+                                    href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D0%BE%D1%88%D0%BA%D0%B0"
+                                    target="_blank"
+                                    >Ссылка</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
-                <p id="loadTime"></p>
                 <ul class="footer-list">
                     <li class="footer-list__item footer-list-item">
                         <h3 class="footer-list-item__header">Great Quote</h3>
@@ -290,11 +336,33 @@
                     <li class="footer-list__item footer-list-item">
                         <h3 class="footer-list-item__header">My socials</h3>
                         <ol class="footer-list-item-list">
-                            <li class="footer-list-item-list__item">Github</li>
                             <li class="footer-list-item-list__item">
-                                Telegram
+                                <img
+                                    src="./assets/github.png"
+                                    alt="github"
+                                    width="24"
+                                    height="24"
+                                />
+                                <p>Github</p>
                             </li>
-                            <li class="footer-list-item-list__item">VK</li>
+                            <li class="footer-list-item-list__item">
+                                <img
+                                    src="./assets/telegram.png"
+                                    alt="telegram"
+                                    width="24"
+                                    height="24"
+                                />
+                                <p>Telegram</p>
+                            </li>
+                            <li class="footer-list-item-list__item">
+                                <img
+                                    src="./assets/vk.png"
+                                    alt="vk"
+                                    width="24"
+                                    height="24"
+                                />
+                                <p>VK</p>
+                            </li>
                         </ol>
                     </li>
                     <li class="footer-list__item footer-list-item">
@@ -302,9 +370,16 @@
                             Interesting Quotes
                         </h3>
                         <ol class="footer-list-item-list">
-                            <li class="footer-list-item-list__item">First</li>
-                            <li class="footer-list-item-list__item">Second</li>
-                            <li class="footer-list-item-list__item">Third</li>
+                            <li class="footer-list-item-list__item">
+                                Something about something
+                            </li>
+                            <li class="footer-list-item-list__item">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </li>
+                            <li class="footer-list-item-list__item">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </li>
                         </ol>
                     </li>
                 </ul>
